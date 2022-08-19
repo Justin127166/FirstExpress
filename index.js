@@ -10,6 +10,8 @@ app.get('/', function(req, res){
     res.send('home page')
 })
 
+
+
 app.post('/', function(req, res){
     res.send('post route is working')
 
