@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const Port = 3000
+app.use(express.json())
 
 
 app.get('/hello', function(req, res){
@@ -9,7 +10,6 @@ app.get('/hello', function(req, res){
 app.get('/', function(req, res){
     res.send('home page')
 })
-
 
 
 app.post('/', function(req, res){
